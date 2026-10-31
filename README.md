@@ -1,17 +1,108 @@
-# React + Vite
+# Kanban Workspace 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A clean, minimal, and lightning-fast personal Kanban task management
+> dashboard built with React, Tailwind CSS, and custom CSS variables.
+> Designed for clarity, focus, and seamless daily productivity.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-18+-black?style=flat-square&logo=react)
+![Tailwind
+CSS](https://img.shields.io/badge/Tailwind_CSS-v3+-38BDF8?style=flat-square&logo=tailwindcss)
+![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+------------------------------------------------------------------------
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   **Modular Architecture:** Built following senior-level React
+    patterns with decoupled custom hooks (`useKanban`, `useTheme`) and
+    pure component segregation.
+-   **Dynamic Kanban Columns:** Manage tasks smoothly across **To Do**,
+    **In Progress**, and **Completed** stages with quick-shift controls.
+-   **Advanced Filtering & Search:** Instantly filter tasks by priority
+    (`High`, `Medium`, `Low`), status, or search keywords in real time.
+-   **Dark & Light Mode Support:** Fully integrated theme switcher
+    powered by centralized CSS design tokens (`:root` and `.dark`
+    variables).
+-   **Persistent Local Storage:** Automatically syncs board updates and
+    theme preferences locally so your data survives page refreshes.
+-   **Tactile Micro-Interactions:** Clean, minimalist UI inspired by
+    modern design standards such as Linear and Notion, with zero visual
+    clutter.
 
-## Expanding the ESLint configuration
+------------------------------------------------------------------------
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Kanban-WorkSpace
+## 🛠️ Project Structure
+
+``` text
+src/
+├── components/
+│   ├── ControlBar.jsx     # Search inputs & priority/status filters
+│   ├── Header.jsx         # App branding, new task trigger & theme toggle
+│   ├── KanbanColumn.jsx  # Individual board status columns & counters
+│   ├── TaskCard.jsx       # Individual task items with metadata & actions
+│   └── TaskModal.jsx      # Create/Edit modal dialog with validation
+├── hooks/
+│   ├── useKanban.js       # Core state management, CRUD logic & localStorage sync
+│   └── useTheme.js        # Theme state handler and DOM class toggler
+├── index.css              # Centralized CSS variables & design tokens
+└── App.jsx                # Root application coordinator
+```
+
+------------------------------------------------------------------------
+
+## 🚀 Getting Started Locally
+
+Follow these instructions to get a copy of the project up and running on
+your local machine for development and testing.
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your
+system.
+
+### Installation
+
+1.  **Clone the repository:**
+
+    ``` bash
+    git clone https://github.com/aaryandevwork/kanban-workspace.git
+    ```
+
+2.  **Navigate to the project directory:**
+
+    ``` bash
+    cd kanban-workspace
+    ```
+
+3.  **Install dependencies:**
+
+    ``` bash
+    npm install
+    ```
+
+4.  **Run the development server:**
+
+    ``` bash
+    npm run dev
+    ```
+
+5.  Open your browser and navigate to `http://localhost:5173` (or the
+    port specified in your terminal).
+
+------------------------------------------------------------------------
+
+## 📦 Tech Stack
+
+-   **Core Library:** React 18
+-   **Styling:** Tailwind CSS & custom CSS variables (`var(--...)`)
+-   **Icons:** Lucide React
+-   **Persistence:** Browser `localStorage` API
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+Distributed under the [MIT
+License](https://opensource.org/licenses/MIT). Feel free to use and
+modify this project for personal or commercial purposes.
