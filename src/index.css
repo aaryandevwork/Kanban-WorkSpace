@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  /* Surface & Background Colors */
+  --bg-app: #FAFAFA;
+  --bg-surface: #FFFFFF;
+  --bg-surface-subtle: #F4F4F5;
+  --bg-column: rgba(244, 244, 245, 0.6);
+  --bg-input: #F4F4F5;
+
+  /* Text Colors */
+  --text-primary: #18181B;
+  --text-secondary: #71717A;
+  --text-muted: #A1A1AA;
+  --text-inverse: #FFFFFF;
+
+  /* Border Colors */
+  --border-color: #E4E4E7;
+  --border-subtle: #F4F4F5;
+
+  /* Action / Accent Colors */
+  --btn-primary-bg: #18181B;
+  --btn-primary-text: #FFFFFF;
+  --btn-primary-hover: #27272A;
+
+  /* Priority Badges */
+  --badge-high-bg: #FEF2F2;
+  --badge-high-text: #B91C1C;
+  --badge-high-border: #FECACA;
+
+  --badge-medium-bg: #FFFBEB;
+  --badge-medium-text: #B45309;
+  --badge-medium-border: #FDE68A;
+
+  --badge-low-bg: #F4F4F5;
+  --badge-low-text: #52525B;
+  --badge-low-border: #E4E4E7;
+}
+
+/* Dark Mode Tokens */
+.dark {
+  --bg-app: #09090B;
+  --bg-surface: #18181B;
+  --bg-surface-subtle: #27272A;
+  --bg-column: rgba(24, 24, 27, 0.6);
+  --bg-input: #27272A;
+
+  --text-primary: #FAFAFA;
+  --text-secondary: #A1A1AA;
+  --text-muted: #71717A;
+  --text-inverse: #09090B;
+
+  --border-color: #27272A;
+  --border-subtle: #18181B;
+
+  --btn-primary-bg: #FAFAFA;
+  --btn-primary-text: #09090B;
+  --btn-primary-hover: #E4E4E7;
+
+  --badge-high-bg: rgba(127, 29, 29, 0.3);
+  --badge-high-text: #FCA5A5;
+  --badge-high-border: rgba(185, 28, 28, 0.4);
+
+  --badge-medium-bg: rgba(120, 53, 15, 0.3);
+  --badge-medium-text: #FCD34D;
+  --badge-medium-border: rgba(180, 83, 9, 0.4);
+
+  --badge-low-bg: #27272A;
+  --badge-low-text: #D4D4D8;
+  --badge-low-border: #3F3F46;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
